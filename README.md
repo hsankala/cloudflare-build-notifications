@@ -4,7 +4,7 @@
 
 <!-- dash-content-start -->
 
-Get notified when your Workers Builds complete, fail, or are cancelled. This template uses [Queue Event Subscriptions](https://developers.cloudflare.com/queues/event-subscriptions/) to consume Workers Builds events and forward them to any webhook — Slack, Discord, or your own endpoint.
+Get notified when your Workers Builds complete, fail, or are cancelled. This template uses [Queue Event Subscriptions](https://developers.cloudflare.com/queues/event-subscriptions/) to consume Workers Builds events and forward them to any webhook — Slack, Discord, or your own endpoint..
 
 ## Features
 
