@@ -121,6 +121,10 @@ async function getSigningKey(secret: string, date: string, region: string): Prom
 
 export default {
 	async queue(batch: MessageBatch<CloudflareEvent>, env: Env): Promise<void> {
+
+		 // Diagnostic: verify CLOUDFLARE_API_TOKEN is present in runtime secrets
+		console.log("CLOUDFLARE_API_TOKEN present:", !!env.CLOUDFLARE_API_TOKEN);  
+		
 		if (!env.AWS_ACCESS_KEY_ID || !env.AWS_SECRET_ACCESS_KEY) {
 			console.error("AWS SES credentials are not configured");
 			for (const message of batch.messages) {
